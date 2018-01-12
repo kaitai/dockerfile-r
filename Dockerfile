@@ -20,7 +20,8 @@ RUN R --quiet -e "devtools::install_github('IRkernel/IRkernel')"
 RUN R --quiet -e "IRkernel::installspec()"
 
 # Additional packages for demo: 'TDA','TDAmapper','igraph'
-RUN apt-get update && \
+RUN mkdir /var/lib/apt/lists/partial && \
+    apt-get update && \
     apt-get -y install libgmp-dev && \
     apt-get purge && \
     apt-get clean && \
