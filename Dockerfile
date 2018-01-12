@@ -23,7 +23,7 @@ RUN R --quiet -e "IRkernel::installspec()"
 USER root
 RUN mkdir /var/lib/apt/lists/partial && \
     apt-get update && \
-    apt-get -y install libgmp-dev && \
+    apt-get -y install libgmp-dev libmpfr-dev && \
     apt-get purge && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
