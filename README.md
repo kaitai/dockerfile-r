@@ -15,3 +15,5 @@ build files, it's possible to create R Kernels for use with Binder as well.
 
 "This repository shows how you can use a Dockerfile to install R and
 connect it with Jupyter. This lets you run R code from within the Jupyter Notebooks."
+
+Day of Data 2018 was organized at the University of Minnesota by Alison Link -- it was a great conference, bringing together people from all parts of the University community. Michael Milligan from the Minnesota Supercomputing Institute was also crucial to getting this interactive notebook up and working -- this R on Jupyter via Docker is pretty cool!
